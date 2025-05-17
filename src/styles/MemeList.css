@@ -1,0 +1,14 @@
+.meme-list-container {
+  height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.meme-votes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

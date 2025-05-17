@@ -1,0 +1,39 @@
+.add-meme-form {
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.add-meme-form h2 {
+  margin-bottom: 20px;
+}
+
+.add-meme-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-meme-form input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.add-meme-form button {
+  padding: 8px 16px;
+}
+
+.navigation {
+  margin: 20px 0;
+}
+
+.navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+
+.navigation a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
