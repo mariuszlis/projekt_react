@@ -46,6 +46,6 @@ projekt_react
 
 To start use:
 
-```
-npm start
-```
+   ```
+   npm start
+   ```
