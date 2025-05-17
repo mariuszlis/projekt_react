@@ -65,7 +65,7 @@ const memes = [
   },
   {
     id: 9,
-    title: "Vegeta Pride",
+    title: "Vegeta's Pride",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/vegetafries.jpg",
     upvote: 9,
     downvote: 2,
