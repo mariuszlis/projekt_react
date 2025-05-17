@@ -31,7 +31,7 @@ projekt_react
 
 1. Clone the repository:
    ```
-   git clone https://github.com/mariuszlis/memes_react
+   git clone https://github.com/mariuszlis/projekt_react
    ```
 2. Navigate to the project directory:
    ```
