@@ -1,6 +1,6 @@
 # Projekt React
 
-React application for memes. App is having three routes: `/hot`, `/regular`, and `/add`. You are able to view, upvote/downvote, star memes, and add your own.
+React application for memes. App is having three routes: `/hot`, `/regular`, and `/add`. You are able to view, vote, star memes add your own.
 
 ## Project Structure
 
