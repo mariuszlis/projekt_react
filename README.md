@@ -1,6 +1,6 @@
 # Projekt React
 
-React application for memes. App is having three routes: `/hot`, `/regular`, and `/add`. You are able to view, upvote/downvote, star memes, and add your own.
+React application for memes. App is having three routes: `/hot`, `/regular`, and `/add`. You are able to view, vote, star memes add your own.
 
 ## Project Structure
 
@@ -31,7 +31,7 @@ projekt_react
 
 1. Clone the repository:
    ```
-   git clone https://github.com/mariuszlis/memes_react
+   git clone https://github.com/mariuszlis/projekt_react
    ```
 2. Navigate to the project directory:
    ```
@@ -46,6 +46,6 @@ projekt_react
 
 To start use:
 
-```
-npm start
-```
+   ```
+   npm start
+   ```
