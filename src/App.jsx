@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -8,14 +8,15 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import Hot from "./routes/Hot";
 import Regular from "./routes/Regular";
-import memesData from "./data/memesData";
+import { vote, star, addMeme } from "./store/memesSlice";
 import "./styles/App.css";
 
 function AddMemeForm({ onAdd }) {
-  const [title, setTitle] = useState("");
-  const [url, setUrl] = useState("");
+  const [title, setTitle] = React.useState("");
+  const [url, setUrl] = React.useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -83,32 +84,19 @@ function Navigation() {
 }
 
 function App() {
-  const [memes, setMemes] = useState(memesData);
+  const memes = useSelector((state) => state.memes);
+  const dispatch = useDispatch();
 
   const handleVote = (id, type) => {
-    setMemes((prev) =>
-      prev.map((meme) =>
-        meme.id === id
-          ? {
-              ...meme,
-              upvote: type === "up" ? meme.upvote + 1 : meme.upvote,
-              downvote: type === "down" ? meme.downvote + 1 : meme.downvote,
-            }
-          : meme
-      )
-    );
+    dispatch(vote({ id, type }));
   };
 
   const handleStar = (id) => {
-    setMemes((prev) =>
-      prev.map((meme) =>
-        meme.id === id ? { ...meme, starred: !meme.starred } : meme
-      )
-    );
+    dispatch(star(id));
   };
 
   const handleAddMeme = (newMeme) => {
-    setMemes((prev) => [newMeme, ...prev]);
+    dispatch(addMeme(newMeme));
   };
 
   return (
