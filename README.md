@@ -10,19 +10,25 @@ projekt_react
 │   └── index.html              # Main HTML file
 ├── src
 │   ├── components
+│   │   ├── AddMemeForm.jsx     # Form to add a new meme
 │   │   ├── MemeList.jsx        # Component to display a list of memes
 │   │   ├── MemeList.css        # Styles for MemeList
 │   │   ├── Meme.jsx            # Component to display an individual meme
-│   │   └── Meme.css            # Styles for Meme
+│   │   ├── Meme.css            # Styles for Meme
+│   │   └── Navigation.jsx      # Navigation bar
 │   ├── data
 │   │   └── memesData.js        # Initial memes data
 │   ├── routes
-│   │   ├── Hot.jsx             # Route for hot memes
-│   │   └── Regular.jsx         # Route for regular memes
+│   │   └── MemesList.jsx       # Route for hot/regular memes (uses props)
+│   ├── store
+│   │   ├── memesSlice.js       # Redux slice for memes
+│   │   └── store.js            # Redux store setup
 │   ├── styles
 │   │   └── App.css             # Application styles
 │   ├── App.jsx                 # Main application component with routing
-│   └── index.js                # Entry point of the application
+│   ├── index.js                # Entry point of the application
+│   └── components
+│       └── ErrorPage.jsx       # 404 Error page
 ├── package.json                # npm configuration file
 └── README.md                   # Project documentation
 ```
@@ -46,6 +52,6 @@ projekt_react
 
 To start use:
 
-   ```
-   npm start
-   ```
+```
+npm start
+```
