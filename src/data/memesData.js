@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
 const memes = [
   {
-    id: 1,
+    id: uuidv4(),
     title: "Fries",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/fries.jpg",
     upvote: 7,
@@ -8,7 +10,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: "Father Son Kamehameha",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/fathersonkamehameha.jpg",
     upvote: 5,
@@ -16,7 +18,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: "Krillin Worlds Strongest",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/KrillinWorldsStrongest.png",
     upvote: 3,
@@ -24,7 +26,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: "Snoop Beerus",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/pjimage-14-1.jpg",
     upvote: 2,
@@ -32,7 +34,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 5,
+    id: uuidv4(),
     title: "Krillin Phone",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/krillintaken.jpg",
     upvote: 7,
@@ -40,7 +42,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 6,
+    id: uuidv4(),
     title: "Goku or Vegeta?",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/vegetagoku-e1508003088694.jpg",
     upvote: 4,
@@ -48,7 +50,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 7,
+    id: uuidv4(),
     title: "Bulma",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/bulmadrake.jpg",
     upvote: 12,
@@ -56,7 +58,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 8,
+    id: uuidv4(),
     title: "Chichi and Goku",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/chichi-and-goku.jpg",
     upvote: 7,
@@ -64,7 +66,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 9,
+    id: uuidv4(),
     title: "Vegeta's Pride",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/vegetafries.jpg",
     upvote: 9,
@@ -72,7 +74,7 @@ const memes = [
     starred: false,
   },
   {
-    id: 10,
+    id: uuidv4(),
     title: "Graduation",
     url: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2017/10/graduation.jpg",
     upvote: 1,
