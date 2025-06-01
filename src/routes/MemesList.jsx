@@ -1,5 +1,5 @@
 import React from "react";
-import MemeList from "../components/MemeList";
+import Meme from "../components/Meme";
 
 const MemesList = ({ memes = [], onVote, onStar, type }) => {
   // Ensure type is either "hot" or "regular"
@@ -10,6 +10,20 @@ const MemesList = ({ memes = [], onVote, onStar, type }) => {
       ? memes.filter((meme) => meme.upvote - meme.downvote <= 5)
       : memes;
 
+  if (!filteredMemes || filteredMemes.length === 0) {
+    return (
+      <div>
+        <h2>
+          {type === "hot"
+            ? "Hot Memes"
+            : type === "regular"
+            ? "Regular Memes"
+            : "All Memes"}
+        </h2>
+      </div>
+    );
+  }
+
   return (
     <div>
       <h2>
@@ -19,7 +33,11 @@ const MemesList = ({ memes = [], onVote, onStar, type }) => {
           ? "Regular Memes"
           : "All Memes"}
       </h2>
-      <MemeList memes={filteredMemes} onVote={onVote} onStar={onStar} />
+      <div className="meme-list-container">
+        {filteredMemes.map((meme) => (
+          <Meme key={meme.id} meme={meme} onVote={onVote} onStar={onStar} />
+        ))}
+      </div>
     </div>
   );
 };
